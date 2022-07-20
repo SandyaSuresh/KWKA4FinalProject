@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mng-3r-c65">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,46 +67,59 @@
                                     <color key="baseBackgroundColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="YuC-2s-GCX" kind="show" id="DSo-iA-GD3"/>
+                                    <segue destination="Zqm-W0-rJ4" kind="show" id="bKO-rz-GGf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.25603950019999999" green="0.064745083450000004" blue="0.014178120529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Lzw-ra-TCY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="98"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="yFx-ai-1MR">
+        <!--View Controller-->
+        <scene sceneID="VGh-1V-cPA">
             <objects>
-                <tableViewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="YuC-2s-GCX" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bQe-xs-h1Y">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Zqm-W0-rJ4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUP-fE-iQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.25603950019999999" green="0.064745083450000004" blue="0.014178120529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="FvN-Ra-Otq">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="45"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FvN-Ra-Otq" id="Yhv-4w-rR3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="YuC-2s-GCX" id="kEH-Q7-ZGo"/>
-                            <outlet property="delegate" destination="YuC-2s-GCX" id="ou1-O3-gEy"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="LXh-Ny-rNd"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HVs-v3-5Oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-qz-kd7">
+                                <rect key="frame" x="20" y="44" width="374" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-K9-qB3">
+                                <rect key="frame" x="69" y="802" width="67" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="aDO-P7-lzj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-qT-srX">
+                                <rect key="frame" x="302" y="806" width="48" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Stock Image_ Signs_Symbols"/>
+                                <connections>
+                                    <segue destination="n1s-cT-oRR" kind="show" id="pCf-23-k5m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RnX-YJ-5xR"/>
+                        <color key="backgroundColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Sc-f3-WIM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRm-nh-tg5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.86956521739137" y="97.767857142857139"/>
+            <point key="canvasLocation" x="900" y="98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C4H-kU-W1z">
@@ -129,6 +143,24 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZA-CM-zt2">
+                                <rect key="frame" x="285" y="798" width="84" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="belki lazım olur"/>
+                                <connections>
+                                    <segue destination="Zqm-W0-rJ4" kind="show" id="iiz-LF-4gY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fau-gY-J42">
+                                <rect key="frame" x="50" y="802" width="67" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vbl-Vu-bdd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xjZ-yx-gD6"/>
                         <color key="backgroundColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,22 +169,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8X-t8-s5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="809"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="I2U-FY-6Pq">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mng-3r-c65" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fMV-ii-6JM">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6z-qC-eFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-700" y="98"/>
+            <point key="canvasLocation" x="35" y="853"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FNT-tC-sbD"/>
+        <segue reference="bKO-rz-GGf"/>
+        <segue reference="aDO-P7-lzj"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Stock Image_ Signs_Symbols" width="100" height="100"/>
+        <image name="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download" width="100" height="100"/>
+        <image name="belki lazım olur" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
