@@ -16,17 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin by noam shitrit on Icon apps _ Minimalist…" translatesAutoresizingMaskIntoConstraints="NO" id="DWd-CD-m4O">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin by noam shitrit on Icon apps _ Minimalist…" translatesAutoresizingMaskIntoConstraints="NO" id="DWd-CD-m4O">
                                 <rect key="frame" x="-88" y="-268" width="590" height="1385"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="590" id="8Su-8e-nMb"/>
+                                    <constraint firstAttribute="height" constant="1385" id="zKQ-eb-NG0"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="117-1172259_loading-cute-aesthetic-parallel-hd-png-download" translatesAutoresizingMaskIntoConstraints="NO" id="uj4-Ao-3Ha">
-                                <rect key="frame" x="44" y="528" width="327" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="117-1172259_loading-cute-aesthetic-parallel-hd-png-download" translatesAutoresizingMaskIntoConstraints="NO" id="uj4-Ao-3Ha">
+                                <rect key="frame" x="44" y="528" width="330" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="LFX-sD-7xT"/>
+                                    <constraint firstAttribute="height" constant="215" id="jXO-WI-cuC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DWd-CD-m4O" secondAttribute="bottom" constant="-221" id="1L0-AW-u5r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uj4-Ao-3Ha" secondAttribute="bottom" constant="121" id="4cy-Mb-ba7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uj4-Ao-3Ha" secondAttribute="trailing" constant="43" id="HAx-iI-w7J"/>
+                            <constraint firstItem="DWd-CD-m4O" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-88" id="JEU-ff-6wb"/>
+                            <constraint firstItem="uj4-Ao-3Ha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="TrW-LC-jf0"/>
+                            <constraint firstItem="DWd-CD-m4O" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-268" id="Wt3-86-0rn"/>
+                            <constraint firstAttribute="trailing" secondItem="DWd-CD-m4O" secondAttribute="trailing" constant="-88" id="hOV-oV-XfS"/>
+                            <constraint firstItem="uj4-Ao-3Ha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="484" id="uXx-jI-ACo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,13 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udg-gf-gcm">
-                                <rect key="frame" x="122" y="44" width="171" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udg-gf-gcm">
+                                <rect key="frame" x="122" y="44" width="171" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="9KY-iE-vPa"/>
+                                    <constraint firstAttribute="height" constant="35" id="HwS-L7-gfl"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="HOME PAGE">
                                         <attributes>
-                                            <color key="NSColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.25784561039999998" green="0.28217667340000002" blue="0.32988196609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="30" name="Optima-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -30,81 +34,127 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-zJ-NFE">
-                                <rect key="frame" x="173" y="528" width="71" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="search">
-                                            <attributes>
-                                                <color key="NSColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="n1s-cT-oRR" kind="show" id="FNT-tC-sbD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63b-vI-dUI">
-                                <rect key="frame" x="171" y="260" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63b-vI-dUI">
+                                <rect key="frame" x="117" y="249" width="180" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="41Z-XP-oYW"/>
+                                    <constraint firstAttribute="width" constant="180" id="jhr-ZT-c5x"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Library">
                                             <attributes>
-                                                <color key="NSColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" red="0.7538719773" green="0.72958570720000004" blue="0.68180745840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="17" name="Optima-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseBackgroundColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" name="Color - 1"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Zqm-W0-rJ4" kind="show" id="bKO-rz-GGf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-zJ-NFE">
+                                <rect key="frame" x="117" y="522" width="180" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="cCK-cc-9Af"/>
+                                    <constraint firstAttribute="height" constant="35" id="z5F-9F-Axo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="search">
+                                            <attributes>
+                                                <color key="NSColor" red="0.7538719773" green="0.72958570720000004" blue="0.68180745840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="Optima-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" name="Color - 1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="n1s-cT-oRR" kind="show" id="FNT-tC-sbD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.25603950019999999" green="0.064745083450000004" blue="0.014178120529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="Ebt-zJ-NFE" firstAttribute="top" secondItem="63b-vI-dUI" secondAttribute="bottom" constant="238" id="0W5-e9-d55"/>
+                            <constraint firstItem="63b-vI-dUI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="3aM-oZ-h7B"/>
+                            <constraint firstItem="63b-vI-dUI" firstAttribute="top" secondItem="udg-gf-gcm" secondAttribute="bottom" constant="170" id="7xd-bn-Muz"/>
+                            <constraint firstItem="udg-gf-gcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9SP-u5-V9Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="63b-vI-dUI" secondAttribute="trailing" constant="117" id="QO8-AZ-FOx"/>
+                            <constraint firstItem="Ebt-zJ-NFE" firstAttribute="top" secondItem="63b-vI-dUI" secondAttribute="bottom" constant="238" id="TJq-c7-QUj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udg-gf-gcm" secondAttribute="trailing" constant="121" id="aG3-ce-g0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ebt-zJ-NFE" secondAttribute="bottom" constant="305" id="bC3-Dk-V3w"/>
+                            <constraint firstItem="63b-vI-dUI" firstAttribute="top" secondItem="udg-gf-gcm" secondAttribute="bottom" constant="170" id="baV-bw-Dba"/>
+                            <constraint firstItem="Ebt-zJ-NFE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="dAc-80-ZWo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ebt-zJ-NFE" secondAttribute="trailing" constant="117" id="mdl-fM-OH8"/>
+                            <constraint firstItem="udg-gf-gcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="rLX-hw-oUT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lzw-ra-TCY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="98"/>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VGh-1V-cPA">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Zqm-W0-rJ4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VUP-fE-iQt">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="VUP-fE-iQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-qz-kd7">
-                                <rect key="frame" x="20" y="44" width="374" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-qz-kd7">
+                                <rect key="frame" x="20" y="87" width="375" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="705" id="noY-He-Soz"/>
+                                    <constraint firstAttribute="width" constant="375" id="vcn-TI-hxb"/>
+                                </constraints>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-K9-qB3">
-                                <rect key="frame" x="69" y="802" width="67" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-OP-8lg">
+                                <rect key="frame" x="80" y="44" width="255" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7yD-L8-BEz"/>
+                                    <constraint firstAttribute="width" constant="255" id="HsP-Dl-9BX"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="COMPLETED PAGE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.25784561039999998" green="0.28217667340000002" blue="0.32988196609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0w-HK-MXO">
+                                <rect key="frame" x="51" y="802" width="70" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fJw-E7-DOw"/>
+                                    <constraint firstAttribute="width" constant="70" id="mMs-U2-NnP"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title=" " image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="aDO-P7-lzj"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dl8-cd-og0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-qT-srX">
-                                <rect key="frame" x="302" y="806" width="48" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-qT-srX">
+                                <rect key="frame" x="294" y="809" width="65" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="6H3-Lw-T2b"/>
+                                    <constraint firstAttribute="height" constant="55" id="MOj-KG-02r"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Stock Image_ Signs_Symbols"/>
                                 <connections>
@@ -113,29 +163,73 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RnX-YJ-5xR"/>
-                        <color key="backgroundColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="V0w-HK-MXO" firstAttribute="leading" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="51" id="2vl-5y-mjr"/>
+                            <constraint firstItem="JSF-qz-kd7" firstAttribute="top" secondItem="YY8-OP-8lg" secondAttribute="bottom" constant="9" id="3RM-KA-2w5"/>
+                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" secondItem="uZ5-qT-srX" secondAttribute="trailing" constant="56" id="4Dm-a9-q7m"/>
+                            <constraint firstItem="V0w-HK-MXO" firstAttribute="bottom" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="7ST-wl-baj"/>
+                            <constraint firstItem="JSF-qz-kd7" firstAttribute="top" secondItem="YY8-OP-8lg" secondAttribute="bottom" constant="8" symbolic="YES" id="BZ4-yx-qyY"/>
+                            <constraint firstItem="YY8-OP-8lg" firstAttribute="leading" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="80" id="DUX-dy-fzi"/>
+                            <constraint firstItem="YY8-OP-8lg" firstAttribute="top" secondItem="RnX-YJ-5xR" secondAttribute="top" id="EKV-ZK-TuD"/>
+                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" secondItem="YY8-OP-8lg" secondAttribute="trailing" constant="80" id="Emn-1e-5om"/>
+                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" secondItem="JSF-qz-kd7" secondAttribute="trailing" constant="20" id="IBv-Kl-Ww7"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="top" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="17" id="SV3-KR-Pgb"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="184" id="aed-DE-83I"/>
+                            <constraint firstItem="JSF-qz-kd7" firstAttribute="leading" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="20" id="bvr-TB-B5j"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="173" id="eMf-6t-WfN"/>
+                            <constraint firstItem="V0w-HK-MXO" firstAttribute="top" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="10" id="hSL-Xa-u3t"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="bottom" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="keb-UK-zsG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Sc-f3-WIM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRm-nh-tg5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="98"/>
+            <point key="canvasLocation" x="900.00000000000011" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C4H-kU-W1z">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="n1s-cT-oRR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zSr-sI-RJD">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="zSr-sI-RJD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-KK-LbK">
-                                <rect key="frame" x="122" y="44" width="193" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZA-CM-zt2">
+                                <rect key="frame" x="286" y="797" width="85" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="DPT-ve-pCf"/>
+                                    <constraint firstAttribute="height" constant="75" id="Vli-3K-dQp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="belki lazım olur"/>
+                                <connections>
+                                    <segue destination="Zqm-W0-rJ4" kind="show" id="iiz-LF-4gY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fau-gY-J42">
+                                <rect key="frame" x="48" y="802" width="70" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="JcH-MG-VDW"/>
+                                    <constraint firstAttribute="height" constant="60" id="dNS-K6-Owd"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vbl-Vu-bdd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-KK-LbK">
+                                <rect key="frame" x="111" y="44" width="195" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="85I-OY-g0V"/>
+                                    <constraint firstAttribute="height" constant="35" id="UBQ-aY-kq3"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="SEARCH PAGE">
                                         <attributes>
-                                            <color key="NSColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.25784561039999998" green="0.28217667340000002" blue="0.32988196609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="30" name="Optima-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -143,44 +237,46 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZA-CM-zt2">
-                                <rect key="frame" x="285" y="798" width="84" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="belki lazım olur"/>
-                                <connections>
-                                    <segue destination="Zqm-W0-rJ4" kind="show" id="iiz-LF-4gY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fau-gY-J42">
-                                <rect key="frame" x="50" y="802" width="67" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title=" " image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Vbl-Vu-bdd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xjZ-yx-gD6"/>
-                        <color key="backgroundColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="3ZA-CM-zt2" firstAttribute="leading" secondItem="fau-gY-J42" secondAttribute="trailing" constant="168" id="4lR-Wz-xnw"/>
+                            <constraint firstItem="xjZ-yx-gD6" firstAttribute="trailing" secondItem="3ZA-CM-zt2" secondAttribute="trailing" constant="45" id="9LZ-nv-WQw"/>
+                            <constraint firstItem="3ZA-CM-zt2" firstAttribute="top" secondItem="auJ-KK-LbK" secondAttribute="bottom" constant="718" id="CKd-NX-eN6"/>
+                            <constraint firstItem="auJ-KK-LbK" firstAttribute="top" secondItem="xjZ-yx-gD6" secondAttribute="top" id="DWe-kT-Owj"/>
+                            <constraint firstItem="fau-gY-J42" firstAttribute="leading" secondItem="zSr-sI-RJD" secondAttribute="leadingMargin" constant="27" id="RGb-t6-3P1"/>
+                            <constraint firstItem="3ZA-CM-zt2" firstAttribute="leading" secondItem="fau-gY-J42" secondAttribute="trailing" constant="168" id="X1F-lf-NrZ"/>
+                            <constraint firstAttribute="bottom" secondItem="3ZA-CM-zt2" secondAttribute="bottom" constant="25" id="YeV-cY-xid"/>
+                            <constraint firstItem="3ZA-CM-zt2" firstAttribute="top" secondItem="auJ-KK-LbK" secondAttribute="bottom" constant="718" id="cdA-us-o1h"/>
+                            <constraint firstItem="auJ-KK-LbK" firstAttribute="leading" secondItem="xjZ-yx-gD6" secondAttribute="leading" constant="111" id="n8q-7b-JXE"/>
+                            <constraint firstItem="fau-gY-J42" firstAttribute="bottom" secondItem="zSr-sI-RJD" secondAttribute="bottomMargin" id="nwl-U3-i8N"/>
+                            <constraint firstItem="xjZ-yx-gD6" firstAttribute="trailing" secondItem="auJ-KK-LbK" secondAttribute="trailing" constant="110" id="oR6-jB-LTU"/>
+                            <constraint firstItem="fau-gY-J42" firstAttribute="top" secondItem="auJ-KK-LbK" secondAttribute="bottom" constant="723" id="yhe-ma-Yaq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e9b-WW-BzI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8X-t8-s5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="853"/>
+            <point key="canvasLocation" x="34.782608695652179" y="852.45535714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FNT-tC-sbD"/>
-        <segue reference="bKO-rz-GGf"/>
-        <segue reference="aDO-P7-lzj"/>
+        <segue reference="pCf-23-k5m"/>
+        <segue reference="iiz-LF-4gY"/>
+        <segue reference="Vbl-Vu-bdd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Stock Image_ Signs_Symbols" width="100" height="100"/>
         <image name="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download" width="100" height="100"/>
         <image name="belki lazım olur" width="60" height="60"/>
+        <namedColor name="Color">
+            <color red="0.7538719773" green="0.72958570720000004" blue="0.68180745840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color - 1">
+            <color red="0.25784561039999998" green="0.28217667340000002" blue="0.32988196609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
