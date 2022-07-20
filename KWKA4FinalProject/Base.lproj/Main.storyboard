@@ -45,6 +45,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="n1s-cT-oRR" kind="show" id="FNT-tC-sbD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63b-vI-dUI">
                                 <rect key="frame" x="171" y="260" width="75" height="35"/>
@@ -62,6 +65,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.75152236220000002" green="0.94037371869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="YuC-2s-GCX" kind="show" id="DSo-iA-GD3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,7 +81,7 @@
         <!--Table View Controller-->
         <scene sceneID="yFx-ai-1MR">
             <objects>
-                <tableViewController id="YuC-2s-GCX" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="YuC-2s-GCX" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bQe-xs-h1Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,6 +101,7 @@
                             <outlet property="delegate" destination="YuC-2s-GCX" id="ou1-O3-gEy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="LXh-Ny-rNd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVs-v3-5Oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +110,7 @@
         <!--View Controller-->
         <scene sceneID="C4H-kU-W1z">
             <objects>
-                <viewController id="n1s-cT-oRR" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="n1s-cT-oRR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zSr-sI-RJD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +133,7 @@
                         <viewLayoutGuide key="safeArea" id="xjZ-yx-gD6"/>
                         <color key="backgroundColor" red="0.25599080320000001" green="0.068567179140000004" blue="0.014131295489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e9b-WW-BzI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8X-t8-s5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +145,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mng-3r-c65" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fMV-ii-6JM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
