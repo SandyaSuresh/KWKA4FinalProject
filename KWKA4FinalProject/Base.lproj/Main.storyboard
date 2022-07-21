@@ -133,7 +133,7 @@
                                 </constraints>
                                 <color key="tintColor" name="Color - 1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Stock Image_ Signs_Symbols"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
                                 <connections>
                                     <segue destination="n1s-cT-oRR" kind="show" id="pCf-23-k5m"/>
                                 </connections>
@@ -324,7 +324,6 @@
         <segue reference="dl8-cd-og0"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Stock Image_ Signs_Symbols" width="100" height="100"/>
         <image name="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download" width="100" height="100"/>
         <image name="belki lazım olur" width="60" height="60"/>
         <namedColor name="Color">
