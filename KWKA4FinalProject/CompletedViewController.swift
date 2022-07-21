@@ -64,14 +64,14 @@ class CompletedViewController: UIViewController, UITableViewDataSource, UITableV
        let book = books[indexPath.row]
        
         if book.reading == 1{//want to read
-            cell.imageView!.image = UIImage(named: "want to read"); cell.textLabel?.text = "" + book.title!;
+            cell.imageView!.image = UIImage(named: "want to read")
         } else if book.reading == 2 {//reading
-            cell.imageView!.image = UIImage(named: "reading"); cell.textLabel?.text = "" + book.title!;
+            cell.imageView!.image = UIImage(named: "reading")
         }else if book.reading == 3{//completed
-            cell.imageView!.image = UIImage(named: "completed") cell.textLabel?.text = "" + book.title!;
-        }else{
-            cell.textLabel?.text = "" + book.title!
+            cell.imageView!.image = UIImage(named: "completed")
         }
+        cell.textLabel?.text = "" + book.title!
+        
         return cell
     }
     
