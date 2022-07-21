@@ -49,7 +49,7 @@ class CompletedViewController: UIViewController, UITableViewDataSource, UITableV
             let book4 = BookCD(entity: BookCD.entity(), insertInto: context)
             book4.title = "book4"
             book4.author = "author4"
-            book4.tags = "trope1, trope, tropr2, trope3"
+            book4.tags = "trope1, trope, trope2, trope3"
             
             try? context.save()
         }
