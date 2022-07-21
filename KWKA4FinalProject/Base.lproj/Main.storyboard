@@ -108,7 +108,7 @@
         <scene sceneID="VGh-1V-cPA">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Zqm-W0-rJ4" customClass="CompletedViewController" customModule="KWKA4FinalProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VUP-fE-iQt">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="VUP-fE-iQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="20" y="87" width="375" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="705" id="noY-He-Soz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="noY-He-Soz"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="vcn-TI-hxb"/>
                                 </constraints>
                                 <prototypes>
@@ -197,19 +197,19 @@
                         <constraints>
                             <constraint firstItem="V0w-HK-MXO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="51" id="2vl-5y-mjr"/>
                             <constraint firstItem="JSF-qz-kd7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YY8-OP-8lg" secondAttribute="bottom" constant="9" id="3RM-KA-2w5"/>
-                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uZ5-qT-srX" secondAttribute="trailing" constant="56" id="4Dm-a9-q7m"/>
-                            <constraint firstItem="V0w-HK-MXO" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="7ST-wl-baj"/>
+                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uZ5-qT-srX" secondAttribute="trailing" constant="56" id="4Dm-a9-q7m"/>
+                            <constraint firstItem="V0w-HK-MXO" firstAttribute="bottom" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="7ST-wl-baj"/>
                             <constraint firstItem="JSF-qz-kd7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YY8-OP-8lg" secondAttribute="bottom" constant="9" id="BZ4-yx-qyY"/>
                             <constraint firstItem="YY8-OP-8lg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="80" id="DUX-dy-fzi"/>
                             <constraint firstItem="YY8-OP-8lg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="top" id="EKV-ZK-TuD"/>
                             <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YY8-OP-8lg" secondAttribute="trailing" constant="80" id="Emn-1e-5om"/>
-                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="trailing" constant="20" id="IBv-Kl-Ww7"/>
-                            <constraint firstItem="uZ5-qT-srX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="10" id="SV3-KR-Pgb"/>
-                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="184" id="aed-DE-83I"/>
-                            <constraint firstItem="JSF-qz-kd7" firstAttribute="leading" relation="lessThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="20" id="bvr-TB-B5j"/>
-                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="173" id="eMf-6t-WfN"/>
-                            <constraint firstItem="V0w-HK-MXO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="10" id="hSL-Xa-u3t"/>
-                            <constraint firstItem="uZ5-qT-srX" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="keb-UK-zsG"/>
+                            <constraint firstItem="RnX-YJ-5xR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="trailing" constant="20" id="IBv-Kl-Ww7"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="1" id="SV3-KR-Pgb"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="184" id="aed-DE-83I"/>
+                            <constraint firstItem="JSF-qz-kd7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RnX-YJ-5xR" secondAttribute="leading" constant="20" id="bvr-TB-B5j"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="V0w-HK-MXO" secondAttribute="trailing" constant="173" id="eMf-6t-WfN"/>
+                            <constraint firstItem="V0w-HK-MXO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JSF-qz-kd7" secondAttribute="bottom" constant="1" id="hSL-Xa-u3t"/>
+                            <constraint firstItem="uZ5-qT-srX" firstAttribute="bottom" secondItem="RnX-YJ-5xR" secondAttribute="bottom" id="keb-UK-zsG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Sc-f3-WIM"/>
