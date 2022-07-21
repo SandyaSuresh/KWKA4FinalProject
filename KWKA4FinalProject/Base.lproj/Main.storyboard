@@ -133,7 +133,7 @@
                                 </constraints>
                                 <color key="tintColor" name="Color - 1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Vector House Icon, House Icons, House Clipart, Apartment PNG and Vector with Transparent Background for Free Download"/>
+                                <buttonConfiguration key="configuration" style="plain" image="belki lazım olur" title=""/>
                                 <connections>
                                     <segue destination="n1s-cT-oRR" kind="show" id="pCf-23-k5m"/>
                                 </connections>
