@@ -17,6 +17,7 @@
 		26663D3828873C97008D859F /* KWKA4FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26663D3628873C97008D859F /* KWKA4FinalProject.xcdatamodeld */; };
 		26663D3A28873C98008D859F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26663D3928873C98008D859F /* Assets.xcassets */; };
 		26663D3D28873C98008D859F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26663D3B28873C98008D859F /* LaunchScreen.storyboard */; };
+		8D6B3A11288A2CCF0005E04C /* LibraryAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B3A10288A2CCF0005E04C /* LibraryAuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		26663D3928873C98008D859F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26663D3C28873C98008D859F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26663D3E28873C98008D859F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6B3A10288A2CCF0005E04C /* LibraryAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				26663D3328873C97008D859F /* Main.storyboard */,
 				26297A712888CF1D00AEA706 /* CompletedViewController.swift */,
 				26297A732888CF2F00AEA706 /* SearchViewController.swift */,
+				8D6B3A10288A2CCF0005E04C /* LibraryAuthorViewController.swift */,
 				26297A6D2888CEF100AEA706 /* Book.swift */,
 				26297A6F2888CF0C00AEA706 /* HomeViewController.swift */,
 				26663D3928873C98008D859F /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26297A722888CF1D00AEA706 /* CompletedViewController.swift in Sources */,
+				8D6B3A11288A2CCF0005E04C /* LibraryAuthorViewController.swift in Sources */,
 				26297A742888CF2F00AEA706 /* SearchViewController.swift in Sources */,
 				26297A702888CF0C00AEA706 /* HomeViewController.swift in Sources */,
 				26297A6E2888CEF100AEA706 /* Book.swift in Sources */,
