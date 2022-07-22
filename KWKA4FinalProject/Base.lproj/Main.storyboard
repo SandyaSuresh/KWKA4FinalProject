@@ -284,6 +284,9 @@
                                                 <constraint firstItem="mMa-X1-pka" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3H9-ik-CdG" secondAttribute="top" constant="10" id="Y7Q-LL-UJC"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="P65-QM-ZuA" kind="show" identifier="moveToDetail" id="XGZ-HQ-LC4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -296,11 +299,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="searched:" destination="n1s-cT-oRR" eventType="editingDidEnd" id="P50-0g-T1J"/>
-                                    <action selector="textEntered:" destination="n1s-cT-oRR" eventType="valueChanged" id="MkT-tZ-q3A"/>
-                                    <action selector="textEntered:" destination="n1s-cT-oRR" eventType="editingDidEnd" id="Mkq-os-wPD"/>
                                     <action selector="textEntered:" destination="sgy-lg-jIO" eventType="editingChanged" id="Z0R-Fe-0pT"/>
-                                    <action selector="texts:" destination="n1s-cT-oRR" eventType="editingDidEnd" id="jFU-bh-bQ9"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-KK-LbK">
@@ -503,7 +502,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Stock Image_ Signs_Symbols"/>
                                 <connections>
-                                    <segue destination="n1s-cT-oRR" kind="show" id="Z1f-sS-na4"/>
+                                    <segue destination="n1s-cT-oRR" kind="show" identifier="" id="Z1f-sS-na4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj9-tZ-ij3">
@@ -546,9 +545,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="XGZ-HQ-LC4"/>
         <segue reference="Z1f-sS-na4"/>
-        <segue reference="Jjd-Ae-E2I"/>
-        <segue reference="S52-Tl-LxT"/>
+        <segue reference="iiz-LF-4gY"/>
+        <segue reference="Vbl-Vu-bdd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Stock Image_ Signs_Symbols" width="100" height="100"/>

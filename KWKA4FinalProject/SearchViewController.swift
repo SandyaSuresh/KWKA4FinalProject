@@ -50,6 +50,14 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+      // this gives us a single ToDo
+      let book = books[indexPath.row]
+
+        self.performSegue(withIdentifier: "moveToDetail", sender: book)
+    }
+
     @IBAction func search(_ sender: Any) {
         searchedBooks.removeAll()
         let text = searchBox.text ?? ""
