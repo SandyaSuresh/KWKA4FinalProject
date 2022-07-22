@@ -418,7 +418,7 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="42" id="x0q-Nf-zBf"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Tittle">
+                                    <fragment content="Title">
                                         <attributes>
                                             <color key="NSColor" red="0.25784561039999998" green="0.28217667340000002" blue="0.32988196609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="20" name="Optima-Regular"/>
@@ -463,6 +463,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" name="Color - 1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="wantTapped:" destination="P65-QM-ZuA" eventType="touchUpInside" id="Yhc-QW-kxP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ot-97-wrT">
                                 <rect key="frame" x="135" y="576" width="145" height="35"/>
@@ -483,6 +486,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" name="Color - 1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="readTapped:" destination="P65-QM-ZuA" eventType="touchUpInside" id="Kk4-2d-ysN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdJ-Bo-4iq">
                                 <rect key="frame" x="135" y="715" width="145" height="35"/>
@@ -503,6 +509,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" name="Color - 1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="compTapped:" destination="P65-QM-ZuA" eventType="touchUpInside" id="xUo-5X-KD2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLC-8v-krC">
                                 <rect key="frame" x="64" y="802" width="70" height="60"/>
@@ -597,9 +606,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ves-pf-0fe"/>
                     <connections>
-                        <outlet property="authorLable" destination="9f8-Sf-kr8" id="ldS-Kk-6TF"/>
-                        <outlet property="tagLable" destination="2g1-gi-0Qa" id="aY2-uU-Qpl"/>
-                        <outlet property="tittleLable" destination="P1g-bR-RNB" id="gtQ-G3-gmo"/>
+                        <outlet property="authorLabel" destination="9f8-Sf-kr8" id="2M7-PJ-t3R"/>
+                        <outlet property="tagsLabel" destination="2g1-gi-0Qa" id="czQ-f2-aLO"/>
+                        <outlet property="titleLabel" destination="P1g-bR-RNB" id="1xf-bK-K4q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="st8-gT-ifs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

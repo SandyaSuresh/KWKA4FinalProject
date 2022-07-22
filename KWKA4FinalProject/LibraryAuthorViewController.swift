@@ -11,19 +11,39 @@ class LibraryAuthorViewController: UIViewController {
 
     
     
-    @IBOutlet weak var tittleLable: UILabel!
+
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var tagsLabel: UILabel!
     
-    @IBOutlet weak var authorLable: UILabel!
-    
-    @IBOutlet weak var tagLable: UILabel!
-    
+    var previousVC = SearchViewController()
+    var selectedBook: BookCD?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleLabel.text = selectedBook?.title
+        authorLabel.text = selectedBook?.author
+        tagsLabel.text = selectedBook?.tags
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func wantTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            selectedBook?.reading = 1
+        }
+    }
+    @IBAction func readTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            selectedBook?.reading = 2
+        }
+    }
+    @IBAction func compTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            selectedBook?.reading = 3
+        }
+    }
 
     /*
     // MARK: - Navigation
