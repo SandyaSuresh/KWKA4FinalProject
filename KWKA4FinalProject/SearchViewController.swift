@@ -12,13 +12,12 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var searchBox: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    var tags: [String] = []
     var books: [BookCD] = []
     var searchedBooks: [BookCD] = []
-    var previousVC = CompletedViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
@@ -31,6 +30,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.reloadData()
     }
     
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchedBooks.count;
     }
@@ -45,17 +45,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             cell.imageView!.image = UIImage(named: "reading")
         }else if book.reading == 3{//completed
             cell.imageView!.image = UIImage(named: "completed")
+        }else{
+            cell.imageView!.image = UIImage()
         }
         cell.textLabel?.text = "" + book.title!
         
         return cell
     }
+    @IBAction func nextPress(_ sender: Any) {
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
       // this gives us a single ToDo
       let book = books[indexPath.row]
-
-        self.performSegue(withIdentifier: "moveToDetail", sender: book)
+        //self.performSegue(withIdentifier: "moveToDetail", sender: book)
     }
 
     @IBAction func search(_ sender: Any) {
@@ -80,6 +83,12 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         }
         if let homeVC = segue.destination as? HomeViewController {
             homeVC.books = books
+        }
+        if let libAuthVC = segue.destination as? LibraryAuthorViewController {
+            
+                libAuthVC.books = books
+                libAuthVC.previousVC = self
+            
         }
         
     }

@@ -9,13 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var previousVC = CompletedViewController()
     var books: [BookCD] = []
     var tags: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        createBooks()
+        //createBooks()
         initializeDatabase()
         //for book in books{
         //    print("Title: \(book.title) Author: \(book.author) Tags: \(book.tags)")
@@ -26,14 +25,14 @@ class HomeViewController: UIViewController {
     func createBooks(){
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                 // Determine the file name
-            if let path = Bundle.main.path(forResource: "booklist", ofType: "txt") {
-              do {
-                let contents = try String(contentsOfFile: path, encoding: .utf8)
+//            if let path = Bundle.main.path(forResource: "booklist", ofType: "txt") {
+//              do {
+//                let contents = try String(contentsOfFile: path, encoding: .utf8)
              
-                //let filename = "/Users/sandya/Desktop/booklist.txt"
+                let filename = "/Users/sandya/Desktop/booklist.txt"
 
                 // Read the contents of the specified file
-                //let contents = try! String(contentsOfFile: filename)
+                let contents = try! String(contentsOfFile: filename)
 
                 // Split the file into separate lines
                 let lines = contents.split(separator:"~")
@@ -58,14 +57,14 @@ class HomeViewController: UIViewController {
                     for item in 2...items.count - 1{
                         book.tags!.append(String(items[item]))
                     }
-                    book.reading = 0
-                    //NSLog("Title: \(book.title) Author: \(book.author) Tags: \(book.tags)")
+                    book.reading = Int16.random(in: 0...3)
+                    NSLog("Title: \(book.title) Author: \(book.author) Tags: \(book.tags) Reading: \(book.reading)")
                 }
                 try? context.save()
-              } catch let error{
-                print(error)
-              }
-            }
+//              } catch let error{
+//                print(error)
+//              }
+//            }
         }
     }
     
@@ -89,6 +88,7 @@ class HomeViewController: UIViewController {
         }
         if let searchVC = segue.destination as? SearchViewController {
             searchVC.books = books
+            searchVC.tags = tags
         }
     }
     
